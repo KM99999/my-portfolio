@@ -87,6 +87,7 @@ export {
   shop,
   youtube,
   keisuke,
+  keisuke,
   python,
   django,
   postgres,
