@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit:*)",
+      "Bash(icacls \"e:\\\\my-portfolio\\\\.git\\\\objects\" /grant \"Administrator:\\(OI\\)\\(CI\\)F\" /T)"
+    ]
+  }
+}
