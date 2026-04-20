@@ -3,11 +3,9 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import livelink from "../assets/liveLink.png";
 
 const ProjectCard = ({
   index,
@@ -15,8 +13,6 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
-  liveUrl,
 }) => {
   return (
     // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -34,31 +30,6 @@ const ProjectCard = ({
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
-
-          <div className="absolute inset-0 flex gap-2 justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-2/3 h-2/3 object-contain"
-              />
-            </div>
-            <div
-              onClick={() => {
-                window.open(liveUrl, "_blank");
-              }}
-              className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={livelink}
-                alt="live url"
-                className="w-2/3 h-2/3 object-contain"
-              />
-            </div>
-          </div>
         </div>
 
         <div className="mt-5">
