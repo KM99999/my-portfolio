@@ -69,9 +69,7 @@ const ImageCarousel = () => {
       <Slider {...settings}>
         {imageProjects.map((project) => (
           <div key={project.id} className="carousel-slide">
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
             <img className="" src={project.image} alt={project.title} />
-            </a>
             <h3 className="text-center mt-5 font-bold text-lg">
               {project.title}
             </h3>
